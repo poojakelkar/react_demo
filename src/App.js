@@ -1,19 +1,16 @@
-import React from 'react';
-import Header from './components/Header'
+import React,{Component} from 'react';
+import Header from './components/Header';
+import './App.css';
 
-function App(props) {
-  return (
-    <div className="person">
-      <Header></Header>
-      <Header></Header>
-      <Header></Header>
-      <Header></Header>
-      <Header></Header>
-        <h1>{props.name}</h1>
-        <p>Your age:{props.age}</p>
-    </div>
-  );
+class App extends Component{
+  render(){
+    return(
+      <div className="App">
+        <h1>Hi, I'm React App</h1>
+      </div>
+    );
+  }
 }
 
 export default App;
-export const DATA = 'ALI';
+
