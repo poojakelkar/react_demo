@@ -1,14 +1,14 @@
 import React,{Component} from 'react';
-import Header from './components/Header';
 import './App.css';
 
 class App extends Component{
   render(){
     return(
-      <div className="App">
-        <h1>Hi, I'm React App</h1>
-      </div>
-    );
+      //<div className="App">
+        //<h1>Hi, I'm React App</h1>
+      //</div>
+    //);
+    return React.createElement('div',null,React.createElement('h1',null,'Does It works??'))
   }
 }
 
