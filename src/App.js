@@ -5,7 +5,7 @@ import Person from './Person/Person';
 class App extends Component{
   state = {
     persons:[
-      {name:'max',age:28},
+      {name:'many',age:28},
       {name:'manu',age:29},
       {name:'mani',age:30}
     ]
