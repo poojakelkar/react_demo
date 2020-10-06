@@ -4,8 +4,9 @@ const Person = (props) => {
     return (
         <div>
             <p>
-                I'm a {props.name} and i'm {props.age}Years old and i am{" "}
+                I'm a {props.name} and i'm {props.age}Years old and{" "}
                 {props.color}
+                <p>{props.children}</p>
             </p>
         </div>
     );
