@@ -2,6 +2,7 @@ import { render } from "@testing-library/react";
 import React, { useState } from "react";
 import "./App.css";
 import Person from "./Person/Person";
+import Profile from './Profile'
 
 const App = (props) => {
     const [personsState, setPersonsState] = useState({
@@ -44,6 +45,7 @@ const App = (props) => {
                 name={personsState.persons[2].name}
                 age={personsState.persons[0].age}
             />
+            
         </div>
     );
     //return React.createElement('div',null,React.createElement('h1',null,'Does It works??'));
