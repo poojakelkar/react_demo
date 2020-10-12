@@ -1,3 +1,4 @@
+import { render } from "@testing-library/react";
 import React, { useState } from "react";
 import "./App.css";
 import Person from "./Person/Person";
@@ -17,13 +18,14 @@ const App = (props) => {
         //personsState.persons[0].name="maxmalian";
         setPersonsState({
             persons: [
-                { name: "maxmalian", age: 28 },
+                { name: "maxmilian", age: 28 },
                 { name: "manu", age: 29 },
                 { name: "max", age: 40 },
             ],
         });
     };
 
+    const nameChangedHandler=(event)
     return (
         <div className='App'>
             <h1>Hi, I'm React App</h1>
